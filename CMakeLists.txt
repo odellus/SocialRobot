@@ -7,7 +7,7 @@ add_subdirectory(pybind11)
 # Find packages
 find_package(gazebo REQUIRED)
 
-find_package(PythonLibs REQUIRED)
+find_package(PythonLibs 3 REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 message("python include ${PYTHON_INCLUDE_DIRS}")
 list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
